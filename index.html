@@ -63,32 +63,12 @@
 <h1>Gridiron Visuals</h1>
 
 <p>Football Play Simulator created by Jordan Glesener, Micah Glesener, and Dayton Roberts</p>
+	
+<p>Intended for use by football coaches and players to better understand their craft.<\p>
 
 <h1>Download Here</h1>
-
-<p>In order to check different product's bang for buck we need to establish what bang for buck means in terms of our variables. A good metric for the amount of a product is servings, because when you boil it down the number of servings is the number of times you can "use" a product.</p>
-<p>Now the saying bang for buck (BFB) refers to how much money you spend to get a certain amount of something. If you spend a lot of money but get little of something the BFB is low, and when you spend little money but get a lot of something BFB is high, so basically the inverse of price per serving.</p>
-<p>In order to focus on how price affects the price per serving we will just focus on the two main types of protein, standard whey protein and whey protein isolate, which are two of the most popular and researched supplements on the market.</p>
-
-<pre><code>
-# importing shtuff
-import seaborn as sb
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# creating/cleaning the df
-supps = pd.read_csv("supplements.csv")
-supps = supps.dropna()
-supps = supps[supps['Category'].isin(['WHEY PROTEIN', 'WHEY PROTEIN ISOLATE'])]
-
-# linear model plot
-sp = sb.lmplot(data = supps, x = "Price", y = "PricePerServing")</pre></code>
 	
-<center><img src = "PPS fxn Price.png" height = 300px></center>
-
-<h1> Conclusion </h1>
-<p> In this lm plot of price per serving as a function of price we see that as price increases price per serving decreases. By our assumption earlier that BFB is the inverse of price per serving, we can conclude that the more money you spend on a whey protein supplement the better your bang for buck. </p>
-	
+	<p>Check back regularly for updates!</p>
 
 </body>
 </html>
